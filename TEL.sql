@@ -228,6 +228,7 @@ SELECT
 	ROUND((SUM(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END))) AS churned_customers,
 	ROUND((SUM(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) /  COUNT(*)) * 100, 2) AS churn_rate
 FROM telco_customer2
+WHERE InternetService = "Fiber optic"
 GROUP BY TechSupport
 ;
 
