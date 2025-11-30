@@ -39,7 +39,7 @@ link: [Tableau Public](https://public.tableau.com/app/profile/nick.starosta/viz/
 
 ### Screenshots
 
-![alt text]([path/to/your/image.png](https://github.com/nick-s-data/Customer-Churn-Project/blob/72286c200130248932156e8defe7a96c07b05664/Churn_dashboard.png))
+![alt text]([[path/to/your/image.png](https://github.com/nick-s-data/Customer-Churn-Project/blob/72286c200130248932156e8defe7a96c07b05664/Churn_dashboard.png)](https://github.com/nick-s-data/Customer-Churn-Project/blob/3acb45a32929d4930ff3e4c2e3c5d725df234790/Churn_dashboard.png))
 
 ## Tools & Technologies
 
