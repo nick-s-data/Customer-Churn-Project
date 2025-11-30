@@ -1,0 +1,3116 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='telco_fixed' inline='true' name='federated.0szvzj01yc8b181cmidwj1s5uxkm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='telco_fixed' name='textscan.1fk4j761k79uv614h0wji1iozjd0'>
+            <connection class='textscan' directory='F:/data_analysis_steps/mini project/Telecom Company' filename='telco_fixed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1fk4j761k79uv614h0wji1iozjd0' name='telco_fixed.csv' table='[telco_fixed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='string' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+            <column datatype='integer' name='row_num' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customerID]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>customerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SeniorCitizen</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SeniorCitizen]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>SeniorCitizen</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PhoneService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PhoneService]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>PhoneService</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipleLines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MultipleLines]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>MultipleLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharges]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>MonthlyCharges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharges]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>TotalCharges</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>row_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[row_num]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>row_num</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+      <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+      <column caption='Senior Citizen' datatype='string' name='[SeniorCitizen]' role='dimension' type='nominal' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+      <column caption='telco_fixed.csv' datatype='table' name='[__tableau_internal_object_id__].[telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Row Num' datatype='integer' name='[row_num]' role='dimension' type='ordinal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/nickg/AppData/Local/Temp/TableauTemp/#TableauTemp_1ok9z421rje1jd14orrx30e5l30f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/25/2025 12:11:35 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customerID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customerID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7032</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SeniorCitizen</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SeniorCitizen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SeniorCitizen</remote-alias>
+              <ordinal>2</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Partner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Partner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Partner</remote-alias>
+              <ordinal>3</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>5</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PhoneService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PhoneService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PhoneService</remote-alias>
+              <ordinal>6</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MultipleLines</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MultipleLines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MultipleLines</remote-alias>
+              <ordinal>7</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>8</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>9</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>10</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>11</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>12</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>13</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>14</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>15</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>16</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>17</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharges</remote-alias>
+              <ordinal>18</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1384</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharges</remote-alias>
+              <ordinal>19</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4479</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>20</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>row_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[row_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>row_num</remote-alias>
+              <ordinal>21</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='telco_fixed.csv' id='telco_fixed.csv_99A291DC9DDF4A37B5B842503B2B1F31'>
+            <properties context=''>
+              <relation connection='textscan.1fk4j761k79uv614h0wji1iozjd0' name='telco_fixed.csv' table='[telco_fixed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customerID' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='string' name='SeniorCitizen' ordinal='2' />
+                  <column datatype='string' name='Partner' ordinal='3' />
+                  <column datatype='string' name='Dependents' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='string' name='PhoneService' ordinal='6' />
+                  <column datatype='string' name='MultipleLines' ordinal='7' />
+                  <column datatype='string' name='InternetService' ordinal='8' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='9' />
+                  <column datatype='string' name='OnlineBackup' ordinal='10' />
+                  <column datatype='string' name='DeviceProtection' ordinal='11' />
+                  <column datatype='string' name='TechSupport' ordinal='12' />
+                  <column datatype='string' name='StreamingTV' ordinal='13' />
+                  <column datatype='string' name='StreamingMovies' ordinal='14' />
+                  <column datatype='string' name='Contract' ordinal='15' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='16' />
+                  <column datatype='string' name='PaymentMethod' ordinal='17' />
+                  <column datatype='real' name='MonthlyCharges' ordinal='18' />
+                  <column datatype='real' name='TotalCharges' ordinal='19' />
+                  <column datatype='string' name='Churn' ordinal='20' />
+                  <column datatype='integer' name='row_num' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='telco_2' inline='true' name='federated.1ts71vi1rt80kd11d835g13mfenj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='telco_2' name='textscan.07768v70s9f1s3152cgds0otxc56'>
+            <connection class='textscan' directory='F:/data_analysis_steps/mini project/Telecom Company' filename='telco_fixed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07768v70s9f1s3152cgds0otxc56' name='telco_2.csv' table='[telco_2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+            <column datatype='integer' name='row_num' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customerID]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>customerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SeniorCitizen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SeniorCitizen]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>SeniorCitizen</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PhoneService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PhoneService]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>PhoneService</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipleLines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MultipleLines]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>MultipleLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharges]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>MonthlyCharges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharges]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>TotalCharges</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>row_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[row_num]</local-name>
+            <parent-name>[telco_2.csv]</parent-name>
+            <remote-alias>row_num</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='count_churn' datatype='integer' name='[Calculation_774056192386183168]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Churn])' />
+      </column>
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Monthly Charges (bin)' datatype='integer' name='[Monthly Charges (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[MonthlyCharges]' peg='0' size='10' />
+      </column>
+      <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+      <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+      <column caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Tenure (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[tenure]' peg='0' size='4.91' />
+      </column>
+      <column aggregation='None' caption='Total Charges (bin)' datatype='integer' name='[Total Charges (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[TotalCharges]' peg='0' size='183' />
+      </column>
+      <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+      <column caption='telco_2.csv' datatype='table' name='[__tableau_internal_object_id__].[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Row Num' datatype='integer' name='[row_num]' role='dimension' type='ordinal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/nickg/AppData/Local/Temp/TableauTemp/#TableauTemp_11kwyl316w607911juu1h0z3wsct.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/26/2025 10:27:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customerID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customerID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7032</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SeniorCitizen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SeniorCitizen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SeniorCitizen</remote-alias>
+              <ordinal>2</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Partner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Partner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Partner</remote-alias>
+              <ordinal>3</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>5</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PhoneService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PhoneService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PhoneService</remote-alias>
+              <ordinal>6</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MultipleLines</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MultipleLines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MultipleLines</remote-alias>
+              <ordinal>7</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>8</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>9</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>10</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>11</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>12</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>13</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>14</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>15</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>16</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>17</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharges</remote-alias>
+              <ordinal>18</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1384</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharges</remote-alias>
+              <ordinal>19</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4479</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>20</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>row_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[row_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>row_num</remote-alias>
+              <ordinal>21</ordinal>
+              <family>telco_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='telco_2.csv' id='telco_2.csv_64F9A0B8355E4DB8AA5EB61A65AE81B7'>
+            <properties context=''>
+              <relation connection='textscan.07768v70s9f1s3152cgds0otxc56' name='telco_2.csv' table='[telco_2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customerID' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+                  <column datatype='string' name='Partner' ordinal='3' />
+                  <column datatype='string' name='Dependents' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='string' name='PhoneService' ordinal='6' />
+                  <column datatype='string' name='MultipleLines' ordinal='7' />
+                  <column datatype='string' name='InternetService' ordinal='8' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='9' />
+                  <column datatype='string' name='OnlineBackup' ordinal='10' />
+                  <column datatype='string' name='DeviceProtection' ordinal='11' />
+                  <column datatype='string' name='TechSupport' ordinal='12' />
+                  <column datatype='string' name='StreamingTV' ordinal='13' />
+                  <column datatype='string' name='StreamingMovies' ordinal='14' />
+                  <column datatype='string' name='Contract' ordinal='15' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='16' />
+                  <column datatype='string' name='PaymentMethod' ordinal='17' />
+                  <column datatype='real' name='MonthlyCharges' ordinal='18' />
+                  <column datatype='real' name='TotalCharges' ordinal='19' />
+                  <column datatype='string' name='Churn' ordinal='20' />
+                  <column datatype='integer' name='row_num' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='telco_fixed (2)' inline='true' name='federated.0glrek20cbymew1d18c691wxqemq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='telco_fixed' name='textscan.02wn1lu11hw5iq109zs2t1wgalae'>
+            <connection class='textscan' directory='F:/data_analysis_steps/mini project/Telecom Company' filename='telco_fixed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02wn1lu11hw5iq109zs2t1wgalae' name='telco_fixed.csv' table='[telco_fixed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='string' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+            <column datatype='integer' name='row_num' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customerID]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>customerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SeniorCitizen</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SeniorCitizen]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>SeniorCitizen</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PhoneService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PhoneService]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>PhoneService</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipleLines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MultipleLines]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>MultipleLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharges]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>MonthlyCharges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharges]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>TotalCharges</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>row_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[row_num]</local-name>
+            <parent-name>[telco_fixed.csv]</parent-name>
+            <remote-alias>row_num</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+      <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+      <column caption='Senior Citizen' datatype='string' name='[SeniorCitizen]' role='dimension' type='nominal' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+      <column caption='telco_fixed.csv' datatype='table' name='[__tableau_internal_object_id__].[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Row Num' datatype='integer' name='[row_num]' role='dimension' type='ordinal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/nickg/AppData/Local/Temp/TableauTemp/#TableauTemp_1karbwx1wk30k912rkoff0c7owby.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/26/2025 10:27:54 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customerID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customerID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7032</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SeniorCitizen</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SeniorCitizen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SeniorCitizen</remote-alias>
+              <ordinal>2</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Partner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Partner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Partner</remote-alias>
+              <ordinal>3</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>5</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PhoneService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PhoneService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PhoneService</remote-alias>
+              <ordinal>6</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MultipleLines</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MultipleLines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MultipleLines</remote-alias>
+              <ordinal>7</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>8</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>9</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>10</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>11</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>12</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>13</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>14</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>15</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>16</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>17</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharges</remote-alias>
+              <ordinal>18</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1384</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharges</remote-alias>
+              <ordinal>19</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4479</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>20</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>row_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[row_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>row_num</remote-alias>
+              <ordinal>21</ordinal>
+              <family>telco_fixed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='telco_fixed.csv' id='telco_fixed.csv_4F23E24660ED40D9B4D0D69B6A69900C'>
+            <properties context=''>
+              <relation connection='textscan.02wn1lu11hw5iq109zs2t1wgalae' name='telco_fixed.csv' table='[telco_fixed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customerID' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='string' name='SeniorCitizen' ordinal='2' />
+                  <column datatype='string' name='Partner' ordinal='3' />
+                  <column datatype='string' name='Dependents' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='string' name='PhoneService' ordinal='6' />
+                  <column datatype='string' name='MultipleLines' ordinal='7' />
+                  <column datatype='string' name='InternetService' ordinal='8' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='9' />
+                  <column datatype='string' name='OnlineBackup' ordinal='10' />
+                  <column datatype='string' name='DeviceProtection' ordinal='11' />
+                  <column datatype='string' name='TechSupport' ordinal='12' />
+                  <column datatype='string' name='StreamingTV' ordinal='13' />
+                  <column datatype='string' name='StreamingMovies' ordinal='14' />
+                  <column datatype='string' name='Contract' ordinal='15' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='16' />
+                  <column datatype='string' name='PaymentMethod' ordinal='17' />
+                  <column datatype='real' name='MonthlyCharges' ordinal='18' />
+                  <column datatype='real' name='TotalCharges' ordinal='19' />
+                  <column datatype='string' name='Churn' ordinal='20' />
+                  <column datatype='integer' name='row_num' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='MonthlyCharges distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='telco_2' name='federated.1ts71vi1rt80kd11d835g13mfenj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ts71vi1rt80kd11d835g13mfenj'>
+            <column aggregation='None' caption='Monthly Charges (bin)' datatype='integer' name='[Monthly Charges (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[MonthlyCharges]' peg='0' size='10' />
+            </column>
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column-instance column='[MonthlyCharges]' derivation='Count' name='[cnt:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Monthly Charges (bin)]' derivation='None' name='[none:Monthly Charges (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MonthlyCharges]' derivation='Sum' name='[sum:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1ts71vi1rt80kd11d835g13mfenj].[cnt:MonthlyCharges:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Monthly Charges (bin):qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ts71vi1rt80kd11d835g13mfenj].[sum:MonthlyCharges:qk]' min='6459.5' type='interpolated' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1ts71vi1rt80kd11d835g13mfenj].[sum:MonthlyCharges:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ts71vi1rt80kd11d835g13mfenj].[cnt:MonthlyCharges:qk]</rows>
+        <cols>[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Monthly Charges (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Monthly Charges (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{357C3EFA-B6DD-498C-99DD-606432B3164B}' />
+    </worksheet>
+    <worksheet name='Tenure distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='telco_2' name='federated.1ts71vi1rt80kd11d835g13mfenj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ts71vi1rt80kd11d835g13mfenj'>
+            <column aggregation='None' datatype='integer' name='[Tenure (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[tenure]' peg='0' size='4.91' />
+            </column>
+            <column-instance column='[tenure]' derivation='Count' name='[cnt:tenure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tenure (bin)]' derivation='None' name='[none:Tenure (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tenure]' derivation='Sum' name='[sum:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1ts71vi1rt80kd11d835g13mfenj].[cnt:tenure:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Tenure (bin):qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1ts71vi1rt80kd11d835g13mfenj].[sum:tenure:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ts71vi1rt80kd11d835g13mfenj].[cnt:tenure:qk]</rows>
+        <cols>[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Tenure (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Tenure (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B71859A1-8058-4329-AE81-E70B8743764D}' />
+    </worksheet>
+    <worksheet name='TotalCharges distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='telco_2' name='federated.1ts71vi1rt80kd11d835g13mfenj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ts71vi1rt80kd11d835g13mfenj'>
+            <column aggregation='None' caption='Total Charges (bin)' datatype='integer' name='[Total Charges (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[TotalCharges]' peg='0' size='183' />
+            </column>
+            <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+            <column-instance column='[TotalCharges]' derivation='Count' name='[cnt:TotalCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Charges (bin)]' derivation='None' name='[none:Total Charges (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalCharges]' derivation='Sum' name='[sum:TotalCharges:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1ts71vi1rt80kd11d835g13mfenj].[cnt:TotalCharges:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ts71vi1rt80kd11d835g13mfenj].[sum:TotalCharges:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ts71vi1rt80kd11d835g13mfenj].[cnt:TotalCharges:qk]</rows>
+        <cols>[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Total Charges (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{91D0C587-31E0-4DD3-912D-751A5EC1DBCD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='distributions'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97568' id='9' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1216'>
+            <zone h='97568' id='7' type-v2='layout-basic' w='97538' x='1231' y='1216'>
+              <zone h='36067' id='3' name='TotalCharges distribution' w='97538' x='1231' y='25607'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37110' id='6' name='Tenure distribution' w='97538' x='1231' y='61674'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24391' id='5' name='MonthlyCharges distribution' w='97538' x='1231' y='1216'>
+                <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97568' id='14' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1216'>
+                <zone fixed-size='202' h='24391' id='5' is-fixed='true' name='MonthlyCharges distribution' w='97538' x='1231' y='1216'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36067' id='3' is-fixed='true' name='TotalCharges distribution' w='97538' x='1231' y='25607'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37110' id='6' is-fixed='true' name='Tenure distribution' w='97538' x='1231' y='61674'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D8B28B7D-DA16-4F23-AFE5-373337CFFC14}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='TotalCharges distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ts71vi1rt80kd11d835g13mfenj].[sum:TotalCharges:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.1ts71vi1rt80kd11d835g13mfenj].[cnt:TotalCharges:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Churn:nk]</field>
+            <field>[federated.1ts71vi1rt80kd11d835g13mfenj].[none:Total Charges (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AE5A8B08-AFE5-456D-B83E-9E214DE0A792}' />
+    </window>
+    <window class='worksheet' maximized='true' name='MonthlyCharges distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ts71vi1rt80kd11d835g13mfenj].[sum:MonthlyCharges:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B95BFF85-C343-416C-A662-3C25A05AA183}' />
+    </window>
+    <window class='worksheet' name='Tenure distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ts71vi1rt80kd11d835g13mfenj].[sum:tenure:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{203C852F-355B-4D6A-A8A8-B62E0AFD0F22}' />
+    </window>
+    <window class='dashboard' name='distributions'>
+      <viewpoints>
+        <viewpoint name='MonthlyCharges distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tenure distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='TotalCharges distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{877BDA36-2D4C-4AF2-A588-21C87621285D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='MonthlyCharges distribution' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGjklEQVR4nO3dTVfb6B2G8VuyAONAwmQCSSDNdNVdN13Ml5l1P1WX/RbtYhZdt522SUOC
+      bfAQhpjXGhu/Snq66GRmeg7TcxLrwSX39fsA+kuyLks2RkpCCEGAqXTRKwAs0g8BhBDEyQBu
+      /iuAsiwXuS7AreMSCNYIANYIANYIANYIANYIANYIANayRa/AhxhcX2s0ntzKrIcbD1Sr1W5l
+      FhbnTgXQOe3rj+1R9DnrWamvvmwQgAEugWCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGDtTv1LJPBenueV3MuWAHAn/ekvr/X7P/x97uUQAO6k
+      6/FMzeOruZfDZwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYy6pYSO+qr8F4WsWi
+      /qfheBJ9xqfq9OJSg9Es+pwslZ492VSSJNFnVaGSAN5djfWPXvyTST1+Y5+sv3Uu9XWzH33O
+      F/cT/fbJZvQ5VeESCNYIANYIANYIANYIANYIANYIANYIANYIANYq+Usw8FOtbvy/OA/GeSXL
+      IQBU7ndf7ylEnvFZWU1kXALBGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGj+G
+      W7DZbKYQYv90TAplGX3GXUQAC/bn1rGal0X0OcmUu4rdhAAWbFomuirivwxr8U8ydxKfAWCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGAtW/QK/L+aTCYqyzL6nLIMkpLoc3AzAvgZ35yMVSR59DmjWSmpFn0O
+      bkYAP6NIMuXpUvQ5gXf/heIzAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
+      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwlIYQgSSEE
+      5XmuJPnwm7UOx1ONyvgtJWWuSRH/ZrJpUqq+lElJ/G0q8plm4Rb2XTG7lX23lJaa3sZrVM7U
+      u57MvZwfAphHnufKsvg3mr6tOe+fC5Cm8Q/MT23f5XmuWq32UW+kHzqniu2pZI/cxoFym3Ni
+      v3g/9antu7s2p5IzAHBXfXxGIWgyulb/eqRQ5uq0W+qPphWu2o9zeucnOvzuRGWZ63C/rd5w
+      /mu/m0yGV2q3DzSc5upfdNU5OlGsd4dyNlb37FJFPlGr2dIkj/E4pqCjTkv73x6rKKZqN5sa
+      TYsIc6TZZKjm3p5Gs0Jnx4c6PutVvu+K2VgH7abevGlpkuc6aLU0GM/mWuYcARR6d3Ssk4tz
+      nR51tPpwS98e7M+1MjeOCYXydEXh6lydo46y9c/1tlP9HEkqk0zPn67pzeuWDrsDNSanOh3F
+      SeCw09F+50Bv99va2nmqVjPCNhV99YbLera9qaN2S492ttVux9l37VZL289/qWX11e0lml68
+      1fWs2n2XZiva+cVzTUdDnb7d1/rmY3X259uejw8gzbS9s6MskSaltL7aUCjnq/EmSVpTPjjT
+      uH5fK0mie417CmWcZ3fVs0Qvdzt6sJ4pq6/pwVqmy0H1s4bnHe13+xr861L9PNXaakNlMap8
+      jrSsMLvQN399oV7I/vMaFeMIc6T+1aU6zV0ddDpaamyovpJqNKn2rJYkiYpRT/XPHisPyffH
+      3HxXHR8fQJnru6NDdbtdNVYb2tt7paX6xlwrc+OY6VC7rY6uL8+0XL+ng9auasv3K58jSacn
+      XdVXG5qFZZWDd3p1NNHzz6t/TtjK/af6za9/pa3NR3q8vqSX/3yhxsbTyucUeaHa0rKWskxP
+      1pf04uVLrd7fqnyOJD3e2lKSZlpe39b4fE8nvaCNRvUP/zs96+nZzqYera9q9/UrLTcezrW8
+      yj4El2WpJEkV+wuUmHNCCCrL8P03DEEhSGkaeYNCUBlCvG0qSylJlEhR57zfjjRNf5wZ+WCo
+      4ljgWyBY+zfArRcMjNKeNgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Tenure distribution' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='TotalCharges distribution' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAYmUlEQVR4nO3daYwk533f8W9V9X3fPT337MzscrlLiaJk64iU0IpgBXGQOAgQBKH1In4R
+      IHmTN0FeBE6ilwGSV0YS24BeOIhhJIIdGRDg0HIkMpaoFQ/JJHdmd+6jt2d6pq+Zvq868mK4
+      21PTQ65ILndJ1v8DLLCoZ/5dTx2/rqequ6oVy7IshHAo9Ul3QIgnSQIgHE0CIBxNAiA+BSy6
+      3e67tvY6HYx3OdOVAIhHZuvNn/B7//W/8ad/8WMM08KyLCyry+528Z3/n/17/Ycv0wT07inf
+      /96f8KNbb/HKD1+mb1lYFra/tf1jfBpA+2ibV9+6w0svv45lWfSaZTZ2R/NsHW/y6so+l2XA
+      9VjXkPhUW3r2q6xsHvHNb36NWz/4HkenOstPT/Nn3/0p3/rn/5jdt9+i58vgKVfQgbde/TEL
+      X/gGN2di/M/f+10Oqkfc+PLXqd19neO+l5mYgml2KJf7tJoGX/rbn+XO25tEc8t0Cm/iTV/j
+      a195lr9eWePG57/En/yP71Iq7vHFv/Esna7G9//0j2kPVZ7/O3+f8ps/wrg5h0ux91mOAOIj
+      YHLc1Hn+8/OUOxpPX/8cSbVNXVfZK+yd+zsVyzIwDINAbJIvf26J0t4uxfqQo/w98oUi0wsL
+      tEPTJFWdOxtr4AvTbTUJB4OUj48YmjDQB/jcLlKTSzw3H2Br/4hS5ZSuFuLpuRgnnSGarl86
+      DJIAiEdqbmEBDZWFbIyfrBzz2Rs3CXmOyVe7mLrJ1aVFpq4s4AGe+ZUvsf/zl/l/r68yu7hA
+      MJIil4mimCYLy0ssLF8nM7XMtHbKxtEJN5/5LEa7QTwZR1E1fD4fKgqpSIRySyfq7XK7pPGZ
+      q7NMTSS5Mj9HIjtDxK1j+kO4L9nbFfkgTHysGR1++le36PmSfP3Lz176J+agyc/vFPiVZ69f
+      2n608Ra91DXmE76xtgcBuH/CoKpyUBDOYdvbTdN8Uv0Q4omQt3vhaBIA4WgSAOFoEgDhaBIA
+      4WgSAOFoY98FOmoOMEz7Z2Nel0oq6H5snRLicRkLwCt7dTpD++cBubCHbyzHH1unhHhcZAgk
+      HE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxN
+      AiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIg
+      HE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxN
+      AiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIg
+      HE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxN
+      AiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxNAiAcTQIgHM31fv5447jFrd2T
+      sem/cTNDKuR9ZJ0S4nF5XwHoDg0qrcHY9KFhPbIOCfE4yRBIOJoEQDiaBEA4mgRAOJoEQDia
+      BEA4mgRAOJoEQDiaBEA4mgRAOJoEQDiaBEA4mgRAOJoEQDiaBEA4mgRAOJoEQDiaBEA42vu6
+      JfJhXrxdZKCbtmnZqI8vXkk+ytkI8cg80gC8fa9OZ2DYpl2bCEsAxMeWDIGEo0kAhKNJAISj
+      SQCEo0kAhKNJAISjSQCEo0kAhKNJAISjSQCEo0kAhKM90u8CvZc3dqv8cPVobPpv/81F0hHf
+      4+qGEDaPLQB93aTeHY5NN0z5cQ3x5Dy2ADzMRrGOdSEMYb+byUTwCfVIOMHHJgB/8IO79C/c
+      S/DcQpLf/vq1J9Qj4QRyEiwc7WNzBHgvb+6UeXXzeGz6P/nqMtGg/Dql+OA+EQE4qLX52fp4
+      AH7zi1eIPoH+iE+PT0QAHkY3zLFpigKaqvLi69v84I2dsfZ//62vEQvJ5Ven+1QE4Fv/+UVM
+      y34F6W/dnOZf/r3PUq53uJuvjNVcFhrhPHISLBxNAiAcTQIgHE0CIBxNAiAcTQIgHE0CIBxN
+      AiAcTQIgHE0CIBztU/FViI/Kn7++w8tv3xub/h9e+ApBn/sJ9Eg8ao4OgGFa/P6Lt8em35hN
+      8PzNaaqNLtvF00vrxKeDowNgWRZvbJXGpofk3d0x5BxAOJoEQDiao4dAH4ZpWhSqrbHpYb+b
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='distributions' width='192'>
+      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
+      X/P/A8ZM1LrxrfyAAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
