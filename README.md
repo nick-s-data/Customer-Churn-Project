@@ -40,6 +40,7 @@ link: [Tableau Public](https://public.tableau.com/app/profile/nick.starosta/viz/
 ### Screenshots
 <img width="1920" height="1080" alt="Churn_dashboard" src="https://github.com/user-attachments/assets/1de5be8d-ac64-4b65-8c20-c09b9ff5fe3f" />
 
+<img width="1920" height="1080" alt="Revenue Dashboard" src="https://github.com/user-attachments/assets/63e7c950-de4b-47e6-98cd-96ceddd57962" />
 
 
 
