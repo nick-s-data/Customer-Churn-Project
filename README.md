@@ -38,7 +38,8 @@ Identify who is leaving, why they are leaving, how much revenue is at risk, and 
 link: [Tableau Public](https://public.tableau.com/app/profile/nick.starosta/viz/telco_dashboard/ChurnDashboard)
 
 ### Screenshots
-
+![Image Alt]([image_url](https://github.com/nick-s-data/Customer-Churn-Project/blob/4716ee38814b87e9ce66be59c2a6b12a50e1d8f8/Churn_dashboard.png))
+![Image Alt]([image_url](https://github.com/nick-s-data/Customer-Churn-Project/blob/4716ee38814b87e9ce66be59c2a6b12a50e1d8f8/Revenue%20Dashboard.png))
 ## Tools & Technologies
 
 - MySQL - Data Cleaning & Preparation, Exploratory Data Analysis
