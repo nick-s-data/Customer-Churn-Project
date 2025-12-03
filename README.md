@@ -38,6 +38,15 @@ Identify who is leaving, why they are leaving, how much revenue is at risk, and 
 link: [Tableau Public](https://public.tableau.com/app/profile/nick.starosta/viz/telco_dashboard/ChurnDashboard)
 
 ### Screenshots
+<img width="1406" height="911" alt="image" src="https://github.com/user-attachments/assets/ae465a06-3fa7-4eed-9836-3c74208707f4" />
+
+
+
+
+<img width="1403" height="911" alt="Revenue Dashboard" src="https://github.com/user-attachments/assets/2a08323f-c01d-4e88-834a-b77c334f4b63" />
+
+
+
 
 ## Tools & Technologies
 
